@@ -1,7 +1,7 @@
 <?php
 class Datinator
 {
-  /**
+  	/**
 	* gets week start/end date either for passed in week $week
 	* @param  $i
 	* @return array();
@@ -18,7 +18,7 @@ class Datinator
 		return array(
 			'start'			=>	date('Y-m-d', $start),
 			'end'			=>	date('Y-m-d', $end),
-			'start_time'	=>	$start_time,
+			'start_time'		=>	$start_time,
 			'end_time'		=>	$end_time
 		);
 	}
@@ -35,7 +35,7 @@ class Datinator
 		return array(
 			'start'			=>	date('Y-m-d', strtotime($start_time)),
 			'end'			=>	date('Y-m-d', strtotime($end_time)),
-			'start_time'	=>	strtotime( $start_time ),
+			'start_time'		=>	strtotime( $start_time ),
 			'end_time'		=>	strtotime( $end_time )
 		);
 	}
@@ -81,13 +81,13 @@ class Datinator
 		return array(
 			'start'			=>	$start,
 			'end'			=>	$end,
-			'start_time'	=>	strtotime( $start ),
+			'start_time'		=>	strtotime( $start ),
 			'end_time'		=>	strtotime( $end )
 		);
 	}
 
 	/**
-	* gets year start/end date either for passed in year
+	* gets year start/end date for passed in year $year
 	* @param  $i
 	* @return array();
 	*/
@@ -98,7 +98,7 @@ class Datinator
 		return array(
 			'start'			=>	date('Y-m-d', strtotime($start_time)),
 			'end'			=>	date('Y-m-d', strtotime($end_time)),
-			'start_time'	=>	strtotime( $start_time ),
+			'start_time'		=>	strtotime( $start_time ),
 			'end_time'		=>	strtotime( $end_time )
 		);
 	}
